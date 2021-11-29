@@ -21,6 +21,10 @@ public class thirdActivity extends AppCompatActivity {
     String acceptedBook;
     public static final String CONTENT = "content";
     public static final String PYTHON = "python";
+    public static final String SURVIVE = "survive";
+    public static final String IDIOTISM = "idiot";
+    public static final String STUPIDITISM = "stupid";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,9 +38,31 @@ public class thirdActivity extends AppCompatActivity {
 
 
         switch (acceptedBook) {
-            case secondActivity.BOOK1:
+            case secondActivity.BOOK_PYTHON:
                 try {
-                    getBookContent("stupids.txt", contentView,R.drawable.python);
+                    getBookContent("python.txt", contentView,R.drawable.python);
+                    break;
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            case secondActivity.BOOK_SURVIVE:
+                try {
+                    getBookContent("survive.txt",contentView,  R.drawable.survive);
+                    break;
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            case secondActivity.BOOK_IDIOTS:
+                try {
+                    getBookContent("idiots.txt", contentView, R.drawable.guideofidiot);
+                    break;
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            case secondActivity.BOOK_STUPIDS:
+                try {
+                    getBookContent("stupids.txt",contentView,R.drawable.page);
+                    break;
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -79,7 +105,7 @@ public class thirdActivity extends AppCompatActivity {
     public void read(View view){
         Intent intent = new Intent(this,fourthActivity.class);
 
-        if (acceptedBook.equals(secondActivity.BOOK1)) {
+        if (acceptedBook.equals(secondActivity.BOOK_PYTHON)) {
             intent.putExtra(CONTENT, PYTHON);
             startActivity(intent);
         }

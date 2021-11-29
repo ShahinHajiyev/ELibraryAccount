@@ -33,9 +33,8 @@
                 android:id="@+id/c"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView"
                 android:textSize="20dp"
-                android:textStyle="italic"/>
+                android:textStyle="italic" />
 
 
         </androidx.core.widget.NestedScrollView>
@@ -57,10 +56,9 @@
                 android:id="@+id/python"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView"
+                android:textColor="@color/purple_700"
                 android:textSize="25dp"
-                android:textStyle="italic"
-                android:textColor="@color/purple_700"/>
+                android:textStyle="italic" />
         </androidx.core.widget.NestedScrollView>
 
         <androidx.core.widget.NestedScrollView
@@ -79,7 +77,6 @@
                 android:id="@+id/dummy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView"
                 android:textColor="@color/purple_700"
                 android:textSize="25dp"
                 android:textStyle="italic" />
@@ -102,7 +99,6 @@
                 android:id="@+id/stupid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView"
                 android:textColor="@color/purple_700"
                 android:textSize="25dp"
                 android:textStyle="italic" />
@@ -114,7 +110,7 @@
             android:layout_width="200dp"
             android:layout_height="186dp"
             android:layout_marginTop="100dp"
-            android:onClick="click"
+            android:onClick="clickPython"
             android:src="@drawable/python"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.104"
@@ -128,11 +124,13 @@
             android:layout_width="200dp"
             android:layout_height="190dp"
             android:layout_marginTop="100dp"
+            android:onClick="clickIdiots"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.102"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView3"
-            app:srcCompat="@drawable/guideofidiot" />
+            app:srcCompat="@drawable/guideofidiot"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -150,11 +148,12 @@
             android:layout_width="200dp"
             android:layout_height="190dp"
             android:layout_marginTop="100dp"
+            android:onClick="clickStupids"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView2"
-            app:srcCompat="@drawable/stupidity" />
+            app:srcCompat="@drawable/page" />
 
         <TextView
             android:id="@+id/textView4"

@@ -10,7 +10,10 @@ import android.widget.TextView;
 public class secondActivity extends AppCompatActivity {
 
     public static final String BOOKS = "books";
-    public static final String BOOK1 = "book1";
+    public static final String BOOK_PYTHON = "book1";
+    public static final String BOOK_SURVIVE = "book2";
+    public static final String BOOK_STUPIDS = "book3";
+    public static final String BOOK_IDIOTS = "book4";
 
     TextView python;
     TextView c;
@@ -39,9 +42,27 @@ public class secondActivity extends AppCompatActivity {
 
     }
 
-    public void click(View view){
+    public void clickPython(View view){
         Intent intent = new Intent(this,thirdActivity.class);
-        intent.putExtra(BOOKS,BOOK1);
+        intent.putExtra(BOOKS,BOOK_PYTHON);
+        startActivity(intent);
+    }
+
+    public void clickSurvive(View view){
+        Intent intent = new Intent(this,thirdActivity.class);
+        intent.putExtra(BOOKS,BOOK_SURVIVE);
+        startActivity(intent);
+    }
+
+    public void clickStupids(View view){
+        Intent intent = new Intent(this,thirdActivity.class);
+        intent.putExtra(BOOKS,BOOK_STUPIDS);
+        startActivity(intent);
+    }
+
+    public void clickIdiots(View view){
+        Intent intent = new Intent(this,thirdActivity.class);
+        intent.putExtra(BOOKS,BOOK_IDIOTS);
         startActivity(intent);
     }
 }
