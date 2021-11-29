@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">E_libraryAccount</string>
+    <string name="my_books">My Books</string>
+    <string name="python">1.pdf</string>
+    <string name="c">Year: 2019
+                     Publisher: WH Allen (first published 1976)
+                     Pages: 96
+                     Language: English
+                     File: EPUB, 2.04 MB
+    </string>
+    <string name="dummy">My Books</string>
+    <string name="stupid">1.pdf</string>
+    <string name="content">
+        Categories: Computers - Programming
+        Year:  2018
+        Edition: Paperback
+        Publisher: John Wiley and Sons
+        Language: English
+        Pages:  408 / 411
+        Series:
+        For Dummies
+        File: PDF, 8.61 MBz</string>
+    <string name="test">This package is part of the Android support library which is no longer maintained. The support library has been superseded by AndroidX which is part of Jetpack. We recommend using the AndroidX libraries in all new projects. You should also consider migrating existing projects to AndroidX. To find the AndroidX class that maps to this deprecated class, see the AndroidX support library class mappings.
+    This package is part of the Android support library which is no longer maintained. The support library has been superseded by AndroidX which is part of Jetpack. We recommend using the AndroidX libraries in all new projects. You should also consider migrating existing projects to AndroidX. To find the AndroidX class that maps to this deprecated class, see the AndroidX support library class mappings.
+    This package is part of the Android support library which is no longer maintained. The support library has been superseded by AndroidX which is part of Jetpack. We recommend using the AndroidX libraries in all new projects. You should also consider migrating existing projects to AndroidX. To find the AndroidX class that maps to this deprecated class, see the AndroidX support library class mappings.</string>
+</resources>
