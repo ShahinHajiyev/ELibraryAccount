@@ -110,5 +110,22 @@ public class thirdActivity extends AppCompatActivity {
             startActivity(intent);
         }
 
+        else if (acceptedBook.equals(secondActivity.BOOK_SURVIVE)) {
+            intent.putExtra(CONTENT, SURVIVE);
+            startActivity(intent);
+        }
+
+        else if (acceptedBook.equals(secondActivity.BOOK_IDIOTS)) {
+            intent.putExtra(CONTENT, IDIOTISM);
+            startActivity(intent);
+        }
+
+        else if (acceptedBook.equals(secondActivity.BOOK_STUPIDS)) {
+            intent.putExtra(CONTENT, STUPIDITISM);
+            startActivity(intent);
+        }
+
+
+
     }
 }
