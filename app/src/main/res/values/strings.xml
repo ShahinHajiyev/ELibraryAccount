@@ -2,6 +2,8 @@
     <string name="app_name">E_libraryAccount</string>
     <string name="my_books">My Books</string>
     <string name="python">1.pdf</string>
+    <string name="notFoundErrorTag">TAG</string>
+    <string name="notFoundError">FILE NOT FOUND</string>
     <string name="c">Year: 2019
                      Publisher: WH Allen (first published 1976)
                      Pages: 96
@@ -23,4 +25,5 @@
     <string name="test">This package is part of the Android support library which is no longer maintained. The support library has been superseded by AndroidX which is part of Jetpack. We recommend using the AndroidX libraries in all new projects. You should also consider migrating existing projects to AndroidX. To find the AndroidX class that maps to this deprecated class, see the AndroidX support library class mappings.
     This package is part of the Android support library which is no longer maintained. The support library has been superseded by AndroidX which is part of Jetpack. We recommend using the AndroidX libraries in all new projects. You should also consider migrating existing projects to AndroidX. To find the AndroidX class that maps to this deprecated class, see the AndroidX support library class mappings.
     This package is part of the Android support library which is no longer maintained. The support library has been superseded by AndroidX which is part of Jetpack. We recommend using the AndroidX libraries in all new projects. You should also consider migrating existing projects to AndroidX. To find the AndroidX class that maps to this deprecated class, see the AndroidX support library class mappings.</string>
+    <string name="button">BACK</string>
 </resources>

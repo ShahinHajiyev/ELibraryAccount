@@ -1,0 +1,15 @@
+Python is a remarkably powerful and dynamic programming language that's used in a wide variety of application domains. Some of its key distinguishing features include a very clear, readable syntax, strong introspection capabilities, intuitive object orientation, and natural expression of procedural code. Plus, Python features full modularity, supporting hierarchical packages, exception-based error handling, and modules easily written in C, C++, Java, R, or .NET languages, such as C#. In addition, Python supports a number of coding styles that include: functional, imperative, object-oriented, and procedural.
+
+
+
+Due to its ease of use and flexibility, Python is constantly growing in popularity—and now you can wear your programming hat with pride and join the ranks of the pros with the help of this guide. Inside, expert author John Paul Mueller gives a complete step-by-step overview of all there is to know about Python. From performing common and advanced tasks, to collecting data, to interacting with package—this book covers it all!
+
+
+• Use Python to create and run your first application
+• Find out how to troubleshoot and fix errors
+• Learn to work with Anaconda and use Magic Functions
+• Benefit from completely updated and revised information since the last edition
+
+
+
+If you've never used Python or are new to programming in general, Beginning Programming with Python For Dummies is a helpful resource that will set you up for success.

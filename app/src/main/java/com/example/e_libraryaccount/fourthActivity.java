@@ -21,9 +21,17 @@ public class fourthActivity extends AppCompatActivity {
             case thirdActivity.PYTHON:
                 openContent("1.pdf");
                 break;
+            case thirdActivity.SURVIVE:
+                openContent("survive.pdf");
+                break;
+            case thirdActivity.IDIOTISM:
+                openContent("idiots.pdf");
+                break;
+            case thirdActivity.STUPIDITISM:
+                openContent("english.pdf");
+                break;
+
         }
-
-
     }
 
     public void openContent(String name){

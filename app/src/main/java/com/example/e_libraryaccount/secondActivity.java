@@ -34,7 +34,7 @@ public class secondActivity extends AppCompatActivity {
         c.setText(getString(R.string.test));
 
         dummy = findViewById(R.id.dummy);
-        c.setText(getString(R.string.c));
+        dummy.setText(getString(R.string.c));
 
         stupid = findViewById(R.id.stupid);
         stupid.setText(getString(R.string.content));

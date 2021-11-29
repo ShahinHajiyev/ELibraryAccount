@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -77,7 +78,6 @@ public class thirdActivity extends AppCompatActivity {
             reader = new BufferedReader(
                     new InputStreamReader(getAssets().open(txt)));
 
-            // do reading, usually loop until end of file reading
             String mLine;
             while ((mLine = reader.readLine()) != null) {
                 text.append(mLine);
@@ -91,7 +91,7 @@ public class thirdActivity extends AppCompatActivity {
                 try {
                     reader.close();
                 } catch (IOException e) {
-                    //log the exception
+                    Log.e(getString(R.string.notFoundErrorTag), getString(R.string.notFoundError));
                 }
             }
         }
