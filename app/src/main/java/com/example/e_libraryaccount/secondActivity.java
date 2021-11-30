@@ -65,4 +65,9 @@ public class secondActivity extends AppCompatActivity {
         intent.putExtra(BOOKS,BOOK_IDIOTS);
         startActivity(intent);
     }
+
+    public void logOut(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 }

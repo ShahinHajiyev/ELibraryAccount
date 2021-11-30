@@ -143,7 +143,8 @@
             app:layout_constraintHorizontal_bias="0.104"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView"
-            app:srcCompat="@drawable/survive" />
+            app:srcCompat="@drawable/survive"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageView
             android:id="@+id/imageView4"
@@ -180,6 +181,7 @@
             android:layout_width="118dp"
             android:layout_height="48dp"
             android:layout_marginTop="50dp"
+            android:onClick="logOut"
             android:text="@string/button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.877"

@@ -40,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
 
             startActivity(intent);
             System.out.println("yes");
-
         }
+        else
+            Toast.makeText(this, getString(R.string.wrongLog), Toast.LENGTH_SHORT).show();
     }
 }
