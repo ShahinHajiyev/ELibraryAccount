@@ -3,6 +3,7 @@ package com.example.e_libraryaccount;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -19,6 +20,7 @@ public class secondActivity extends AppCompatActivity {
     TextView c;
     TextView dummy;
     TextView stupid;
+    public static final String SHARED = "prefs";
 
 
 
@@ -69,5 +71,15 @@ public class secondActivity extends AppCompatActivity {
     public void logOut(View view){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        SharedPreferences prefs = getSharedPreferences(SHARED, MODE_PRIVATE);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putString("lastActivity", getClass().getName());
+        editor.commit();
     }
 }

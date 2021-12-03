@@ -3,6 +3,7 @@ package com.example.e_libraryaccount;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -16,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
     User user;
     String first;
     String second;
+
+    public static final String SHARED = "prefs";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,5 +46,15 @@ public class MainActivity extends AppCompatActivity {
         }
         else
             Toast.makeText(this, getString(R.string.wrongLog), Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        SharedPreferences prefs = getSharedPreferences(SHARED, MODE_PRIVATE);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putString("lastActivity", getClass().getName());
+        editor.commit();
     }
 }
