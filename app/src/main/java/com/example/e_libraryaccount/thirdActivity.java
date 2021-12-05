@@ -125,7 +125,10 @@ public class thirdActivity extends AppCompatActivity {
             startActivity(intent);
         }
 
+    }
 
-
+    public void goBack(View view){
+        Intent intent = new Intent(this, secondActivity.class);
+        startActivity(intent);
     }
 }

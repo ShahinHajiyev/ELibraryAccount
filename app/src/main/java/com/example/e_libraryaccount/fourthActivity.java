@@ -15,6 +15,7 @@ import android.widget.CompoundButton;
 import android.widget.SeekBar;
 
 import com.github.barteksc.pdfviewer.PDFView;
+import com.github.barteksc.pdfviewer.scroll.DefaultScrollHandle;
 
 public class fourthActivity extends AppCompatActivity {
 
@@ -91,7 +92,12 @@ public class fourthActivity extends AppCompatActivity {
 
     public void openContent(String name){
         pdfView = findViewById(R.id.pdfView);
-        pdfView.fromAsset(name).load();
+        pdfView.fromAsset(name)
+                .defaultPage(0)
+                .enableAnnotationRendering(true)
+                .scrollHandle(new DefaultScrollHandle(this))
+                .spacing(1)
+                .load();
 
     }
 
