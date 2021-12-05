@@ -33,4 +33,6 @@
     <string name="read">READ</string>
     <string name="back">BACK</string>
     <string name="textview">TextView</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
 </resources>
